@@ -41,6 +41,7 @@ typedef struct SDL_Aout {
     void (*pause_audio)(SDL_Aout *aout, int pause_on);
     void (*flush_audio)(SDL_Aout *aout);
     void (*set_volume)(SDL_Aout *aout, float left, float right);
+    void (*mute_audio)(SDL_Aout *aout, int mute);
     void (*close_audio)(SDL_Aout *aout);
 
     double (*func_get_latency_seconds)(SDL_Aout *aout);
@@ -49,6 +50,7 @@ typedef struct SDL_Aout {
 
 int SDL_AoutOpenAudio(SDL_Aout *aout, const SDL_AudioSpec *desired, SDL_AudioSpec *obtained);
 void SDL_AoutPauseAudio(SDL_Aout *aout, int pause_on);
+void SDL_AoutMuteAudio(SDL_Aout *aout, int mute);
 void SDL_AoutFlushAudio(SDL_Aout *aout);
 void SDL_AoutSetStereoVolume(SDL_Aout *aout, float left_volume, float right_volume);
 void SDL_AoutCloseAudio(SDL_Aout *aout);

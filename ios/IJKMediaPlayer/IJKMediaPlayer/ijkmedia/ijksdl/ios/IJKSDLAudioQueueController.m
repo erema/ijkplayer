@@ -135,6 +135,17 @@
     AudioQueueFlush(_audioQueueRef);
 }
 
+- (void)mute:(BOOL)isMute
+{
+    if (!_audioQueueRef)
+        return;
+    
+    OSStatus rc = AudioQueueSetParameter(_audioQueueRef, kAudioQueueParam_Volume, isMute);
+    if (rc) {
+        NSLog(@"AudioQueueSetParameter returned %d when setting the volume.\n", rc);
+    }
+}
+
 - (void)stop
 {
     AudioSessionSetActive(false);

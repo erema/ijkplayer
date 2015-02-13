@@ -72,6 +72,7 @@
 - (void)pause;
 - (void)stop;
 - (BOOL)isPlaying;
+- (void)muteAudio;
 
 - (void)setPauseInBackground:(BOOL)pause;
 

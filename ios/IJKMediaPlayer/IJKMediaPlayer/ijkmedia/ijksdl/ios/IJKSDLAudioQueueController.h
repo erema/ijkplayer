@@ -35,6 +35,7 @@
 - (void)flush;
 - (void)stop;
 - (void)close;
+- (void)mute:(BOOL)isMute;
 
 @property (nonatomic, readonly) SDL_AudioSpec spec;
     

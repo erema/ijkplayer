@@ -39,9 +39,10 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft animated:NO];
 
-    NSURL *theMovieURL = [NSURL URLWithString:@"http://wshdl.acgvideo.com/live/live_5099_3038_d0ffe541.flv"];
+    NSString *str = [[NSBundle mainBundle] pathForResource:@"9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2" ofType:@"mp4"];
+    NSURL *theMovieURL = [NSURL URLWithString:str];
 
-    [IJKFFMoviePlayerController setLogReport:YES];
+    [IJKFFMoviePlayerController setLogReport:NO];
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:theMovieURL withOptions:nil];
     self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.player.view.frame = self.view.bounds;
@@ -54,10 +55,20 @@
 
     [self installMovieNotificationObservers];
 
+    UIButton *muteBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [muteBtn setTitle:@"Mute" forState:UIControlStateNormal];
+    muteBtn.frame = CGRectMake(self.player.view.frame.origin.x + self.player.view.frame.size.width - 60, self.player.view.frame.origin.y + self.player.view.frame.size.height - 60, 60, 60);
+    [muteBtn addTarget:self action:@selector(muteVideo) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:muteBtn];
+    
     [self.player prepareToPlay];
     [self.player play];
 }
 
+- (void) muteVideo
+{
+    [self.player muteAudio];
+}
 - (void)dealloc
 {
     [self.player shutdown];

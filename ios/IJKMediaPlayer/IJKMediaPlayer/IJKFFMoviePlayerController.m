@@ -58,6 +58,8 @@
     BOOL _pauseInBackground;
 
     NSMutableArray *_registeredNotifications;
+    
+    BOOL isMute;
 }
 
 @synthesize view = _view;
@@ -258,6 +260,11 @@ void IJKFFIOStatCompleteRegister(void (*cb)(const char *url,
     ijkmp_stop(_mediaPlayer);
 }
 
+- (void)muteAudio
+{
+    isMute = !isMute;
+    ijkmp_mute_audio(_mediaPlayer, (int)isMute);
+}
 - (BOOL)isPlaying
 {
     if (!_mediaPlayer)

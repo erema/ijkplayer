@@ -38,6 +38,7 @@
 - (void)stop;
 - (BOOL)isPlaying;
 - (void)shutdown;
+- (void)muteAudio;
 
 @property(nonatomic, readonly)  UIView *view;
 @property(nonatomic)            NSTimeInterval currentPlaybackTime;

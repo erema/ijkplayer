@@ -2508,9 +2508,13 @@ static int read_thread(void *arg)
         if ((!is->paused || completed) &&
             (!is->audio_st || (is->auddec.finished == is->audioq.serial && frame_queue_nb_remaining(&is->sampq) == 0)) &&
             (!is->video_st || (is->viddec.finished == is->videoq.serial && frame_queue_nb_remaining(&is->pictq) == 0))) {
-            if (ffp->loop != 1 && (!ffp->loop || --ffp->loop)) {
+            if (ffp->loop != 1 && (!ffp->loop || --ffp->loop))
+            {
                 stream_seek(is, ffp->start_time != AV_NOPTS_VALUE ? ffp->start_time : 0, 0, 0);
-            } else if (ffp->autoexit) {
+                ffp->auto_start=1;
+                continue;
+            }
+            else if (ffp->autoexit) {
                 ret = AVERROR_EOF;
                 goto fail;
             } else {
@@ -2890,6 +2894,8 @@ FFPlayer *ffp_create()
     msg_queue_init(&ffp->msg_queue);
     ffp_reset_internal(ffp);
     ffp->meta = ijkmeta_create();
+    ffp->loop = 0;
+//    ffp->audio_disable = 1;
     return ffp;
 }
 

@@ -447,6 +447,11 @@ int ijkmp_pause(IjkMediaPlayer *mp)
     return retval;
 }
 
+void ijkmp_mute_audio(IjkMediaPlayer *mp, int mute)
+{
+    SDL_AoutMuteAudio(mp->ffplayer->aout, mute);
+}
+
 static int ijkmp_stop_l(IjkMediaPlayer *mp)
 {
     assert(mp);
