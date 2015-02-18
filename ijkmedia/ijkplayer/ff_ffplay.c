@@ -2511,9 +2511,6 @@ static int read_thread(void *arg)
             if (ffp->loop != 1 && (!ffp->loop || --ffp->loop))
             {
                 stream_seek(is, ffp->start_time != AV_NOPTS_VALUE ? ffp->start_time : 0, 0, 0);
-//                stream_seek(is, 0, 0, 0);
-                ffp->auto_start=1;
-                continue;
             }
             else if (ffp->autoexit) {
                 ret = AVERROR_EOF;
