@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30898D0B1A9358460051726D /* test.webm in Resources */ = {isa = PBXBuildFile; fileRef = 30898D0A1A9358460051726D /* test.webm */; };
+		30898D161A94C69D0051726D /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30898D151A94C69D0051726D /* libiconv.dylib */; };
 		30F0BFC31A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC21A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */; };
 		30F0BFC51A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC41A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 */; };
 		30F0BFC71A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC61A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		30898D0A1A9358460051726D /* test.webm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.webm; sourceTree = "<group>"; };
+		30898D151A94C69D0051726D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		30F0BFC21A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4"; sourceTree = "<group>"; };
 		30F0BFC41A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4"; sourceTree = "<group>"; };
 		30F0BFC61A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30898D161A94C69D0051726D /* libiconv.dylib in Frameworks */,
 				E60E8C2A19EF70BB005B5B6E /* CoreMedia.framework in Frameworks */,
 				E61B45AE19EF7021002792EC /* AVFoundation.framework in Frameworks */,
 				E60FFBE418BF695700825D7F /* libIJKMediaPlayer.a in Frameworks */,
@@ -178,6 +181,7 @@
 		E6903EFE17EAF70200CFD954 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30898D151A94C69D0051726D /* libiconv.dylib */,
 				E63FC29917F062E8003551EB /* libbz2.dylib */,
 				E63FC29517F060A7003551EB /* libz.dylib */,
 				E63FC28F17F04C83003551EB /* AudioToolbox.framework */,
