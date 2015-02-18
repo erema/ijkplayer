@@ -36,6 +36,9 @@ typedef struct SDL_Aout {
 
     SDL_Class       *opaque_class;
     SDL_Aout_Opaque *opaque;
+    
+    int mute;
+    
     void (*free_l)(SDL_Aout *vout);
     int (*open_audio)(SDL_Aout *aout, const SDL_AudioSpec *desired, SDL_AudioSpec *obtained);
     void (*pause_audio)(SDL_Aout *aout, int pause_on);

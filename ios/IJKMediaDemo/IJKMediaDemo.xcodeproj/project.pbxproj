@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30DFE9E41A8E2E9E00DA0B3A /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30DFE9E31A8E2E9E00DA0B3A /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */; };
+		30898D0B1A9358460051726D /* test.webm in Resources */ = {isa = PBXBuildFile; fileRef = 30898D0A1A9358460051726D /* test.webm */; };
+		30F0BFC31A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC21A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */; };
+		30F0BFC51A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC41A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 */; };
+		30F0BFC71A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 30F0BFC61A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 */; };
 		E60E8C2A19EF70BB005B5B6E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60E8C2919EF70BB005B5B6E /* CoreMedia.framework */; };
 		E60FFBE418BF695700825D7F /* libIJKMediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D74F2E18A5F94B00165BFD /* libIJKMediaPlayer.a */; };
 		E612EAE517F7E0F800BEE660 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E612EAE417F7E0F800BEE660 /* MediaPlayer.framework */; };
@@ -59,7 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30DFE9E31A8E2E9E00DA0B3A /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4"; sourceTree = "<group>"; };
+		30898D0A1A9358460051726D /* test.webm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.webm; sourceTree = "<group>"; };
+		30F0BFC21A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4"; sourceTree = "<group>"; };
+		30F0BFC41A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4"; sourceTree = "<group>"; };
+		30F0BFC61A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4"; sourceTree = "<group>"; };
 		E60E8C2719EF70A7005B5B6E /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		E60E8C2919EF70BB005B5B6E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E612EAE417F7E0F800BEE660 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -133,7 +139,10 @@
 		E66F8DCC17EEDF8E00354D80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				30DFE9E31A8E2E9E00DA0B3A /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */,
+				30898D0A1A9358460051726D /* test.webm */,
+				30F0BFC61A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 */,
+				30F0BFC41A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 */,
+				30F0BFC21A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 */,
 				E66F8DDD17EEF73500354D80 /* btn_player_pause.png */,
 				E66F8DDE17EEF73500354D80 /* btn_player_pause@2x.png */,
 				E66F8DDF17EEF73500354D80 /* btn_player_play.png */,
@@ -300,18 +309,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DFE9E41A8E2E9E00DA0B3A /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 in Resources */,
+				30F0BFC31A9218DD00093632 /* 9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2.mp4 in Resources */,
 				E6903F0A17EAF70200CFD954 /* InfoPlist.strings in Resources */,
 				E6903F1217EAF70200CFD954 /* Default.png in Resources */,
 				E6903F1417EAF70200CFD954 /* Default@2x.png in Resources */,
 				E6903F1617EAF70200CFD954 /* Default-568h@2x.png in Resources */,
 				E6166C9C17EDA4A20006B956 /* IJKMediaDemo-Prefix.pch in Resources */,
 				E6A9B56517EDA72C00A1A500 /* IJKMoviePlayerViewController.xib in Resources */,
+				30F0BFC51A92234600093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F4e378f68e5a3865ce4fef7f69e35b83548577f37920815fec8c92ea5dd7e9b13_1.mp4 in Resources */,
 				E66F8DCF17EEDFCB00354D80 /* player_top_control_bg.png in Resources */,
 				E66F8DD017EEDFCB00354D80 /* player_top_control_bg@2x.png in Resources */,
+				30898D0B1A9358460051726D /* test.webm in Resources */,
 				E66F8DD517EEE01D00354D80 /* btn_player_back_highlighted.png in Resources */,
 				E66F8DD617EEE01D00354D80 /* btn_player_back_highlighted@2x.png in Resources */,
 				E66F8DDB17EEF6A000354D80 /* player_bottom_control_bg.png in Resources */,
+				30F0BFC71A92239B00093632 /* http%3A%2F%2Fimg.ifcdn.com%2Fvideos%2F2918bfde7b7ca4070216fdb98655f79c97db375b1b2fa6f20fc10a2b7d4a57eb_1.mp4 in Resources */,
 				E66F8DDC17EEF6A000354D80 /* player_bottom_control_bg@2x.png in Resources */,
 				E66F8DE117EEF73600354D80 /* btn_player_pause.png in Resources */,
 				E66F8DE217EEF73600354D80 /* btn_player_pause@2x.png in Resources */,

@@ -46,6 +46,8 @@ int aout_open_audio(SDL_Aout *aout, SDL_AudioSpec *desired, SDL_AudioSpec *obtai
         return -1;
     }
 
+    [opaque->aoutController mute:aout->mute];
+    
     if (obtained)
         *obtained = opaque->aoutController.spec;
 

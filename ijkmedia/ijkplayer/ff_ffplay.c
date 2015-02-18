@@ -2894,8 +2894,6 @@ FFPlayer *ffp_create()
     msg_queue_init(&ffp->msg_queue);
     ffp_reset_internal(ffp);
     ffp->meta = ijkmeta_create();
-    ffp->loop = 0;
-//    ffp->audio_disable = 1;
     return ffp;
 }
 
@@ -2988,6 +2986,11 @@ void ffp_set_max_fps(FFPlayer *ffp, int max_fps)
     ffp->max_fps = max_fps;
 }
 
+void ffp_set_loop(FFPlayer *ffp, int loop)
+{
+	ffp->loop = loop;
+}
+            
 void ffp_set_framedrop(FFPlayer *ffp, int framedrop)
 {
     ffp->framedrop = framedrop;

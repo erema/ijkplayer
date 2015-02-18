@@ -34,6 +34,7 @@
 @property(nonatomic, readonly) NSDictionary *mediaMeta;
 @property(nonatomic, readonly) NSDictionary *videoMeta;
 @property(nonatomic, readonly) NSDictionary *audioMeta;
+@property (nonatomic) BOOL isMute;
 
 @end
 
@@ -58,8 +59,6 @@
     BOOL _pauseInBackground;
 
     NSMutableArray *_registeredNotifications;
-    
-    BOOL isMute;
 }
 
 @synthesize view = _view;
@@ -260,11 +259,27 @@ void IJKFFIOStatCompleteRegister(void (*cb)(const char *url,
     ijkmp_stop(_mediaPlayer);
 }
 
-- (void)muteAudio
+- (BOOL)isMute
 {
-    isMute = !isMute;
-    ijkmp_mute_audio(_mediaPlayer, (int)isMute);
+    return _isMute;
 }
+
+- (void)setMuteAudio:(int)mute
+{
+    _isMute = mute;
+    ijkmp_mute_audio(_mediaPlayer, mute);
+}
+
+- (void)setLoopVideo:(int)loop
+{
+    ijkmp_loop_video(_mediaPlayer, loop);
+}
+
+- (void)seekTo:(long)msec
+{
+    ijkmp_seek_to(_mediaPlayer, msec);
+}
+
 - (BOOL)isPlaying
 {
     if (!_mediaPlayer)

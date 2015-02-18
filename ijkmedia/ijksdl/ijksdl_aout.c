@@ -41,7 +41,10 @@ void SDL_AoutPauseAudio(SDL_Aout *aout, int pause_on)
 void SDL_AoutMuteAudio(SDL_Aout *aout, int mute)
 {
     if (aout && aout->mute_audio)
+    {
+        aout->mute = mute;
         aout->mute_audio(aout, mute);
+    }
 }
 
 void SDL_AoutFlushAudio(SDL_Aout *aout)

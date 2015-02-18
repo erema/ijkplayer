@@ -50,6 +50,7 @@ void      ffp_set_overlay_format(FFPlayer *ffp, int chroma_fourcc);
 void      ffp_set_picture_queue_capicity(FFPlayer *ffp, int frame_count);
 void      ffp_set_max_fps(FFPlayer *ffp, int max_fps);
 void      ffp_set_framedrop(FFPlayer *ffp, int framedrop);
+void      ffp_set_loop(FFPlayer *ffp, int loop);
 
 int       ffp_get_video_codec_info(FFPlayer *ffp, char **codec_info);
 int       ffp_get_audio_codec_info(FFPlayer *ffp, char **codec_info);

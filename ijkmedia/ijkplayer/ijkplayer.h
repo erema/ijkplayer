@@ -200,5 +200,6 @@ void           *ijkmp_set_weak_thiz(IjkMediaPlayer *mp, void *weak_thiz);
 int             ijkmp_get_msg(IjkMediaPlayer *mp, AVMessage *msg, int block);
 
 void ijkmp_mute_audio(IjkMediaPlayer *mp, int mute);
+void ijkmp_loop_video(IjkMediaPlayer *mp, int loop);
 
 #endif

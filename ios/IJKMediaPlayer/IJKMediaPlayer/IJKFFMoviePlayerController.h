@@ -72,7 +72,11 @@
 - (void)pause;
 - (void)stop;
 - (BOOL)isPlaying;
-- (void)muteAudio;
+
+- (BOOL)isMute;
+- (void)setMuteAudio:(int)mute;
+- (void)setLoopVideo:(int)loop;
+- (void)seekTo:(long)msec;
 
 - (void)setPauseInBackground:(BOOL)pause;
 

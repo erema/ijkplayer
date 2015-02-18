@@ -39,13 +39,15 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft animated:NO];
 
-    NSString *str = [[NSBundle mainBundle] pathForResource:@"9155431a5ebb41f6a8bf7e882fca93906bada0f76d3370271ad04e79e55ea126_1-2" ofType:@"mp4"];
+    NSString *str = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"webm"];
     NSURL *theMovieURL = [NSURL URLWithString:str];
 
     [IJKFFMoviePlayerController setLogReport:NO];
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:theMovieURL withOptions:nil];
     self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.player.view.frame = self.view.bounds;
+//    [self.player setLoopVideo:0];
+//    [self.player setMuteAudio:1];
 
     self.view.autoresizesSubviews = YES;
     [self.view addSubview:self.player.view];
@@ -67,7 +69,13 @@
 
 - (void) muteVideo
 {
-    [self.player muteAudio];
+    if ([self.player isMute])
+    	[self.player setMuteAudio:0];
+    else
+    {
+        [self.player seekTo:0];
+        [self.player setMuteAudio:1];
+    }
 }
 - (void)dealloc
 {
