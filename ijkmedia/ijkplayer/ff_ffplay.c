@@ -2510,8 +2510,8 @@ static int read_thread(void *arg)
             (!is->video_st || (is->viddec.finished == is->videoq.serial && frame_queue_nb_remaining(&is->pictq) == 0))) {
             if (ffp->loop != 1 && (!ffp->loop || --ffp->loop))
             {
-//                stream_seek(is, ffp->start_time != AV_NOPTS_VALUE ? ffp->start_time : 0, 0, 0);
-                stream_seek(is, 0, 0, 0);
+                stream_seek(is, ffp->start_time != AV_NOPTS_VALUE ? ffp->start_time : 0, 0, 0);
+//                stream_seek(is, 0, 0, 0);
                 ffp->auto_start=1;
                 continue;
             }
@@ -2579,7 +2579,8 @@ static int read_thread(void *arg)
             }
             if (eof) {
                 ffp_toggle_buffering(ffp, 0);
-                SDL_Delay(1000);
+                if (ffp->loop == 1)
+	                SDL_Delay(1000);
             }
             SDL_LockMutex(wait_mutex);
             SDL_CondWaitTimeout(is->continue_read_thread, wait_mutex, 10);
